@@ -1,0 +1,24 @@
+@use "fonts";
+@use "mixins" as m;
+
+
+$white: hsla(0, 0%, 100%, 1);
+$Hwhite: hsla(180, 20%, 75%, 1);
+
+$bt: hsla(208, 56%, 58%, 1);
+$btHov: hsla(208, 56%, 64%, 1);
+$btHovL: hsla(208, 56%, 84%, 1);
+
+$hburger: hsla(212, 53%, 44%, 1);
+$hburgerH: hsla(212, 53%, 54%, 1);
+
+$txth1: #1F3F68;
+
+$link: hsla(208, 56%, 58%, 1);
+$linkH: hsla(208, 56%, 68%, 1);
+
+$link2: hsla(214, 54%, 26%, 20%);
+$link2H: hsla(214, 54%, 40%, 20%);
+
+$txth2Home: #316099;
+$bott: #316099;

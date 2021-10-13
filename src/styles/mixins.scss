@@ -1,0 +1,29 @@
+// @use "variables";
+@use "fonts";
+
+@mixin btn($color, $colorHov) {
+    width: 220px;
+    max-height: 56px;
+    background: $color;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: block;
+  
+    font-family: "Gilroy";
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    color: white;
+  
+    &:hover{
+        background-color: $colorHov;
+    }
+  }

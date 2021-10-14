@@ -1,0 +1,251 @@
+@use "../fonts.scss";
+@use "../variables.scss";
+
+.footer {
+  min-height: 1549px;
+  background-color: variables.$link;
+  border-radius: 125px 0px 0px 0px;
+  width: 100%;
+}
+.Clients {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 125px;
+}
+.Clients__wrap {
+  max-width: 970px;
+}
+.Clients__items {
+  display: flex;
+  flex-direction: row;
+  padding-top: 96px;
+  padding: 96px 20px 0 20px;
+  @media (max-width: 870px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Clients__title {
+    min-width: 223px;
+    font-family: "Gilroy-Regular";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: variables.$white;
+  }
+  .Clients__subtitle {
+    max-width: 540px;
+    margin-left: 97px;
+    font-family: "Gilroy";
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: variables.$white;
+    opacity: 0.6;
+    padding: 0 20px;
+    @media (max-width: 870px) {
+      margin-left: 0;
+      padding-top: 20px;
+    }
+  }
+}
+
+.Clients__table {
+  padding-top: 123px;
+  max-width: 940px;
+  min-height: 258px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 938px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .table__cell {
+    min-height: 135px;
+    width: 235px;
+    max-width: 235px;
+    text-align: center;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: variables.$white;
+  }
+  :not(:last-child) {
+    padding-top: 40px;
+  }
+  .table__row-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    @media (max-width: 890px) {
+      flex-direction: column;
+      max-width: 235px;
+    }
+    .table__cell-1 {
+      border: 1px hsla(0, 0%, 100%, 40%);
+      border-style: none solid solid none;
+      @media (max-width: 469px) {
+        border-style: none none solid none;
+      }
+    }
+    .table__cell-2 {
+      border: 1px hsla(0, 0%, 100%, 40%);
+      border-style: none solid solid none;
+      @media (max-width: 469px) {
+        border-style: none none solid none;
+      }
+    }
+    .table__cell-3 {
+      border: 1px hsla(0, 0%, 100%, 40%);
+      border-style: none solid solid none;
+      @media (max-width: 469px) {
+        border-style: none none solid none;
+      }
+    }
+    .table__cell-4 {
+      border: 1px hsla(0, 0%, 100%, 40%);
+      border-style: none none solid none;
+      padding-top: 40px;
+      @media (max-width: 890px) {
+        border-style: none solid none none;
+      }
+      @media (max-width: 469px) {
+        border-style: none none solid none;
+      }
+    }
+  }
+  .table__row-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    @media (max-width: 890px) {
+      flex-wrap: wrap;
+      max-width: 235px;
+      padding-top: 40px;
+    }
+    @media (max-width: 469px) {
+        padding-top: 0;
+      }
+    .table__cell-5 {
+      border: 1px hsla(0, 0%, 100%, 40%);
+      border-style: none solid none none;
+      @media (max-width: 890px) {
+        border-style: none none solid none;
+      }
+      @media (max-width: 469px) {
+        border-style: none none solid none;
+      }
+    }
+    .table__cell-6 {
+      border: 1px hsla(0, 0%, 100%, 40%);
+      border-style: none solid none none;
+      @media (max-width: 890px) {
+        border-style: none none solid none;
+      }
+      @media (max-width: 469px) {
+        border-style: none none solid none;
+      }
+    }
+    .table__cell-7 {
+      border: 1px hsla(0, 0%, 100%, 40%);
+      border-style: none solid none none;
+      @media (max-width: 890px) {
+        border-style: none none solid none;
+      }
+      @media (max-width: 469px) {
+        border-style: none none solid none;
+      }
+    }
+    .table__cell-link {
+      display: block;
+      box-sizing: border-box;
+      padding: 44.5px 0;
+      text-decoration: none;
+      color: variables.$white;
+      background: variables.$link2;
+      font-family: "Gilroy";
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 46px;
+      letter-spacing: 0.02em;
+      &:hover {
+        background: variables.$link2H;
+      }
+    }
+  }
+}
+// .table__row {
+// }
+
+// .table__cell {
+
+// }
+
+.Clients__table {
+  padding-top: 123px;
+  max-width: 940px;
+  .table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    @media (max-width: 880px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    tr {
+      td {
+        padding: 40px;
+        text-align: center;
+        font-family: "Gilroy";
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 46px;
+        letter-spacing: 0.02em;
+        color: variables.$white;
+      }
+      .td-withBorder {
+        border: 1px hsla(0, 0%, 100%, 40%);
+        border-style: none solid none solid;
+      }
+    }
+    .td-link {
+      padding: 0;
+      display: flex;
+      .moreClients {
+        padding-top: 41px;
+        position: absolute;
+        text-decoration: none;
+        font-family: "Gilroy";
+        color: variables.$white;
+        background: variables.$link2;
+        max-width: 235px;
+        min-height: 126.5px;
+        &:hover {
+          background: variables.$link2H;
+        }
+      }
+    }
+    .tr1 {
+      border: 1px hsla(0, 0%, 100%, 40%);
+      border-style: none none solid none;
+      //   @media (max-width: 880px) {
+      //     display: flex;
+      //     flex-wrap: wrap;
+      //   }
+    }
+    .tr2 {
+      // @media (max-width: 880px) {
+      //     display: flex;
+      //     flex-wrap: wrap;
+      //   }
+    }
+  }
+}

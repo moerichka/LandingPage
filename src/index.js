@@ -4,4 +4,4 @@ import Form from '/scripts/form';
 
 
 const Nav = new Navigation();
-// const form = new Form();
+const form = new Form();

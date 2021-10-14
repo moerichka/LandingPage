@@ -1,0 +1,103 @@
+@use "../fonts.scss";
+@use "../variables.scss";
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+  
+    .form-contact__title {
+      align-self: flex-start;
+      position: relative;
+      left: 56px;
+      margin-top: 56px;
+      margin-bottom: 46px;
+      width: 190px;
+      height: 30px;
+      font-family: "Gilroy-Regular";
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      color: variables.$txth1;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      border: none;
+    }
+    legend {
+      width: 120px;
+      height: 30px;
+      font-family: "Gilroy-Regular";
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      color: #1f3f68;
+      opacity: 0.8;
+    }
+    .form-contact__FN-input,
+    .form-contact__E-input,
+    .form-contact__M-input {
+      opacity: 0.4;
+      border: 1px solid #356ead;
+      box-sizing: border-box;
+      border-radius: 10px;
+      font-family: "Gilroy-Regular";
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      color: #1f3f68;
+      text-indent: 40px;
+      &:focus {
+        background-color: variables.$btHovL;
+        opacity: 0.8;
+      }
+    }
+    .form-contact__FN-input,
+    .form-contact__E-input {
+      max-width: 428px;
+      width: 428px;
+      height: 72px;
+    }
+    .form-contact__M-input {
+      max-width: 428px;
+      width: 428px;
+      height: 144px;
+      padding-top: 20px;
+      padding-right: 20px;
+      resize: none;
+    }
+    .form-contact__submit {
+      margin-top: 48px;
+      width: 428px;
+      height: 72px;
+      left: 670px;
+      top: 1108px;
+      background: #5a98d0;
+      box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+  
+      font-family: "Gilroy-Regular";
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+    }
+  
+    .form-contact__error{
+        color: #900;
+        font-family: "Gilroy-Regular";
+      font-size: 16px;
+      line-height: 26px;
+    }
+  
+    input.invalid{
+      border-color: #900;
+      background-color: #FDD;
+    }
+  }

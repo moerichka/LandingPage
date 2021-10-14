@@ -1,0 +1,87 @@
+@use "../variables";
+@use "../fonts";
+
+.blue-background {
+  min-height: 869px;
+  background: variables.$bott;
+  border-radius: 0px 200px 0px 0px;
+}
+.work-offer {
+  padding-top: 91px;
+  padding-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.work-offer__wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 970px;
+  justify-content: space-between;
+  padding: 0 15px;
+  flex-wrap: wrap;
+  @media (max-width: 709px) {
+    justify-content: center;
+  }
+}
+.work-offer__items {
+  display: flex;
+  flex-direction: column;
+//   padding: 0 15px;
+  .work-offer__title {
+    max-width: 318px;
+    min-height: 92px;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    padding-bottom: 32px;
+  }
+  .work-offer__subtitle {
+    max-width: 460px;
+    min-height: 80px;
+    font-family: "Gilroy";
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    opacity: 0.6;
+  }
+}
+.work-offer__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  min-height: 204px;
+  .work-offer__button {
+    display: block;
+    width: 220px;
+    height: 56px;
+    border: none;
+    background: variables.$bt;
+    border-radius: 10px;
+    font-family: "Gilroy";
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    &:hover {
+      background: variables.$btHov;
+    }
+  }
+}
+
+.blue-background__line{
+    z-index: 1;
+    width: 70.5%;
+    height: 0px;
+    border: 1px solid #ffffff;
+    opacity: 0.4;
+}

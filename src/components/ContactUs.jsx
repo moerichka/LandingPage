@@ -28,32 +28,10 @@ const styles = {
     boxShadow: "5px 10px 50px rgba(16, 112, 177, 0.2)",
     borderRadius: "10px",
   },
-  popup__close: {
-    display: 'block',
-    position: 'absolute',
-    top: '10px',
-    right: '10px',
-    width: '12px',
-    height: '12px',
-    padding: '8px',
-    borderRadius: '50%',
-    cursor: 'pointer',
-    background: '#FFFFFF',
-    textAlign: 'center',
-    fontSize: '12px',
-    lineHeight: '12px',
-    color: '#5a98d0',
-    textDecoration: 'none',
-    fontWeight: 'bold',
-    cursor:'pointer',
-    boxSizing: 'contentBox !important',
-    border: '1px solid #5a98d0',
-},
 };
 
 const Form = () => {
   return <div className="popup" id="popup" style={styles.popup}>
-  <div id="popup_close" className="popup__close" style={styles.popup__close}>X</div>
     <form id="form-contact" style={styles.form} className="form-contact">
         <div className="form-contact__title">SEND US MESSAGE</div>
         <fieldset>

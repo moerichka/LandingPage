@@ -9,21 +9,21 @@
   min-height: 1554px;
 }
 .benefits__wrap {
-  margin-top: 192px;
-  max-width: 910px;
+  padding-top: 192px;
+  max-width: 970px;
   width: 100%;
 }
 .wrap {
 }
 .benefits__header {
-  max-width: 358px;
+  max-width: 388px;
   font-family: "Gilroy-Regular";
   font-weight: bold;
   font-size: 36px;
   line-height: 46px;
   letter-spacing: 0.05em;
   color: #316099;
-  padding-left: 15px;
+  padding: 0 15px;
   @media (max-width: 790px) {
     margin-left: auto;
     margin-right: auto;
@@ -41,8 +41,9 @@
   flex-wrap: wrap;
   position: relative;
   top: -135px;
-  margin: 0 15px;
+  padding: 0 15px;
   padding-bottom: 30px;
+  // margin-left: 80px;
   @media (max-width: 790px) {
     justify-content: center;
     padding-top: 15px;
@@ -163,16 +164,5 @@
       height: 16px;
       background: url("../assets/imgs/Vector.svg") center no-repeat;
     }
-    // &::after {
-    //   content: "";
-    //   position: relative;
-    //   left: 108px;
-    //   top: -34px;
-    //   right: 0;
-    //   bottom: 0;
-    //   width: 16px;
-    //   height: 16px;
-    //   background: url("../assets/imgs/Vector.svg") center no-repeat;
-    // }
   }
 }

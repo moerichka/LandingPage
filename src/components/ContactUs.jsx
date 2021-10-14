@@ -17,8 +17,8 @@ const styles = {
   },
   form: {
     position: "fixed",
-    width: "540px",
-    height: "800px",
+    maxWidth: "540px",
+    minHeight: "800px",
     top: '50%',
     left: '50%',
     transform: 'translate(-50%,-50%)',
@@ -33,21 +33,23 @@ const styles = {
 const Form = () => {
   return <div className="popup" id="popup" style={styles.popup}>
     <form id="form-contact" style={styles.form} className="form-contact">
-        <div className="form-contact__title">SEND US MESSAGE</div>
-        <fieldset>
-          <legend className="form-contact__FN-legend">Full Name</legend>
-          <input type="text" className="form-contact__FN-input input" placeholder="Your Name" />
-        </fieldset>
-        <fieldset>
-          <legend className="form-contact__E-legend">Email</legend>
-          <input type="text" className="form-contact__E-input input" placeholder="Your Email"/>
-        </fieldset>
-        <fieldset>
-          <legend className="form-contact__M-legend">Message</legend>
-          <textarea className="form-contact__M-input input" placeholder="Your Message"></textarea>
-        </fieldset>
-        <div className="form-contact__error"></div>
-        <input type="submit" value="SUBMIT" className="form-contact__submit"/>
+        <div className="form-contact__wrapper">
+          <div className="form-contact__title">SEND US MESSAGE</div>
+          <fieldset>
+            <legend className="form-contact__FN-legend">Full Name</legend>
+            <input type="text" className="form-contact__FN-input input" placeholder="Your Name" />
+          </fieldset>
+          <fieldset>
+            <legend className="form-contact__E-legend">Email</legend>
+            <input type="text" className="form-contact__E-input input" placeholder="Your Email"/>
+          </fieldset>
+          <fieldset>
+            <legend className="form-contact__M-legend">Message</legend>
+            <textarea className="form-contact__M-input input" placeholder="Your Message"></textarea>
+          </fieldset>
+          <div className="form-contact__error"></div>
+          <input type="submit" value="SUBMIT" className="form-contact__submit"/>
+        </div>
     </form>
   </div>
 };
